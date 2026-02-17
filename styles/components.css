@@ -547,6 +547,8 @@
     transform: translateX(-100%);
     transition: transform var(--transition-base);
     box-shadow: var(--shadow-xl);
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
   }
   
   .navbar-menu.active {
@@ -554,7 +556,16 @@
   }
   
   .navbar-toggle {
-    display: flex;
+    display: flex !important;
+    z-index: 1001;
+  }
+  
+  .navbar-logo img {
+    height: 32px;
+  }
+  
+  .navbar-logo span {
+    font-size: var(--text-lg);
   }
   
   .card {
