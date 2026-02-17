@@ -392,52 +392,235 @@
 @media (max-width: 1024px) {
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-6);
   }
   
   .contact-container {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: var(--text-4xl);
-  }
-  
-  .hero-subtitle {
-    font-size: var(--text-base);
-  }
-  
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
+    gap: var(--space-8);
   }
   
   .testimonials-container {
     grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Hero */
+  .hero-title {
+    font-size: var(--text-4xl);
+    line-height: 1.2;
   }
   
+  .hero-subtitle {
+    font-size: var(--text-base);
+    line-height: 1.6;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+  }
+  
+  .hero-scroll {
+    bottom: var(--space-4);
+    font-size: var(--text-xs);
+  }
+  
+  /* Projects */
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .project-image {
+    height: 200px;
+  }
+  
+  .project-content {
+    padding: var(--space-6);
   }
   
   .project-stats {
     flex-direction: column;
     gap: var(--space-4);
   }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  /* Testimonials */
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonial-card {
+    padding: var(--space-6);
+  }
+  
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: var(--text-lg);
+  }
+  
+  /* Contact */
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-form {
+    padding: var(--space-6);
+  }
+  
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: var(--text-xl);
+  }
+  
+  /* About */
+  .mission-vision {
+    padding: var(--space-8);
+  }
+  
+  .mission-card,
+  .vision-card {
+    padding: var(--space-6);
+  }
 }
 
 @media (max-width: 480px) {
+  /* Hero */
   .hero-title {
     font-size: var(--text-3xl);
   }
   
-  .section-title {
-    font-size: var(--text-3xl);
+  .hero-subtitle {
+    font-size: var(--text-sm);
   }
   
+  .hero-content {
+    padding: var(--space-16) 0;
+  }
+  
+  /* Section Headers */
+  .section-title {
+    font-size: var(--text-2xl);
+  }
+  
+  .section-subtitle {
+    font-size: var(--text-sm);
+  }
+  
+  /* Projects */
+  .project-image {
+    height: 180px;
+  }
+  
+  .project-content {
+    padding: var(--space-5);
+  }
+  
+  .project-title {
+    font-size: var(--text-xl);
+  }
+  
+  .project-description {
+    font-size: var(--text-sm);
+  }
+  
+  .stat-value {
+    font-size: var(--text-2xl);
+  }
+  
+  /* Testimonials */
+  .testimonial-card {
+    padding: var(--space-5);
+  }
+  
+  .testimonial-text {
+    font-size: var(--text-sm);
+  }
+  
+  .author-name {
+    font-size: var(--text-base);
+  }
+  
+  /* Contact */
   .contact-info,
   .contact-form {
+    padding: var(--space-5);
+  }
+  
+  .contact-item {
+    gap: var(--space-3);
+  }
+  
+  /* About */
+  .mission-vision {
     padding: var(--space-6);
+    margin-top: var(--space-12);
+  }
+  
+  .mission-card,
+  .vision-card {
+    padding: var(--space-5);
+  }
+  
+  .mission-card h3,
+  .vision-card h3 {
+    font-size: var(--text-xl);
+  }
+  
+  .mission-card p,
+  .vision-card p {
+    font-size: var(--text-sm);
+  }
+}
+
+/* === LANDSCAPE MOBILE === */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-section {
+    min-height: auto;
+  }
+  
+  .hero-content {
+    padding: var(--space-12) 0;
+  }
+  
+  .hero-title {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-3);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-6);
+  }
+  
+  .hero-scroll {
+    display: none;
+  }
+}
+
+/* === TOUCH OPTIMIZATIONS === */
+@media (hover: none) and (pointer: coarse) {
+  .project-card:hover,
+  .testimonial-card:hover,
+  .card:hover {
+    transform: none;
+  }
+  
+  .project-card:active,
+  .testimonial-card:active,
+  .card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
   }
 }

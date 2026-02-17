@@ -1,0 +1,182 @@
+/* ============================================
+   MOBILE-SPECIFIC OPTIMIZATIONS
+   ============================================ */
+
+/* Prevenir zoom en inputs en iOS */
+@supports (-webkit-touch-callout: none) {
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* Mejorar scroll en iOS */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Optimizar tap highlights */
+* {
+  -webkit-tap-highlight-color: rgba(77, 208, 225, 0.2);
+  -webkit-touch-callout: none;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: rgba(77, 208, 225, 0.3);
+}
+
+/* Prevenir selección de texto en elementos interactivos */
+.btn,
+.navbar-link,
+.card,
+.badge {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Permitir selección en contenido */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* Optimizar fuentes para móvil */
+@media (max-width: 768px) {
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Safe area para notch en iPhone */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: max(0px, env(safe-area-inset-left));
+    padding-right: max(0px, env(safe-area-inset-right));
+  }
+  
+  .navbar {
+    padding-left: max(var(--space-4), env(safe-area-inset-left));
+    padding-right: max(var(--space-4), env(safe-area-inset-right));
+  }
+  
+  .footer {
+    padding-bottom: max(var(--space-6), env(safe-area-inset-bottom));
+  }
+}
+
+/* Mejorar rendimiento en móvil */
+@media (max-width: 768px) {
+  /* Reducir complejidad de sombras */
+  .card,
+  .btn-primary {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Simplificar animaciones */
+  .card:hover::after {
+    display: none;
+  }
+  
+  /* Optimizar blur */
+  .card,
+  .navbar.scrolled {
+    backdrop-filter: blur(8px);
+  }
+  
+  /* Botones más pequeños en móvil */
+  .btn {
+    padding: var(--space-2) var(--space-5);
+    font-size: var(--text-sm);
+    min-height: 44px; /* Área táctil mínima */
+  }
+  
+  .btn-large {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-base);
+  }
+  
+  .btn-small {
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--text-xs);
+    min-height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Botones aún más compactos en móviles pequeños */
+  .btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-xs);
+  }
+  
+  .btn-large {
+    padding: var(--space-2) var(--space-5);
+    font-size: var(--text-sm);
+  }
+}
+
+/* Orientación */
+@media (orientation: portrait) {
+  .hero-section {
+    min-height: 100vh;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+  .hero-section {
+    min-height: auto;
+    padding: var(--space-12) 0;
+  }
+  
+  .section {
+    padding: var(--space-10) 0;
+  }
+}
+
+/* Dark mode support para móviles */
+@media (prefers-color-scheme: dark) {
+  /* Ya estamos en dark mode por defecto */
+}
+
+/* Reducir movimiento para usuarios que lo prefieran */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Mejorar contraste en luz solar */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #00bcd4;
+    --color-primary-light: #4dd0e1;
+  }
+  
+  .card,
+  .navbar {
+    border-width: 2px;
+  }
+}

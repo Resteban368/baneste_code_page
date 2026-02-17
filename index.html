@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
     <meta
       name="description"
       content="Baneste Codes - Desarrollo de software a la medida. Buscando el camino perfecto hacia aplicaciones móviles excepcionales."
@@ -12,6 +12,9 @@
       content="desarrollo software, aplicaciones móviles, Flutter, automatización, n8n, software a medida"
     />
     <meta name="author" content="Baneste Codes" />
+    <meta name="theme-color" content="#1a8b9d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <!-- Open Graph -->
     <meta
@@ -29,6 +32,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="assets/banesteCodesIcon.jpeg" />
+    <link rel="apple-touch-icon" href="assets/banesteCodesIcon.jpeg" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,6 +47,7 @@
     <link rel="stylesheet" href="styles/components.css" />
     <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/sections.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
   </head>
   <body>
     <!-- ============================================
@@ -686,6 +691,24 @@
         </div>
       </div>
     </footer>
+
+    <!-- ============================================
+         BOTÓN VOLVER ARRIBA
+         ============================================ -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Volver arriba">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
 
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
