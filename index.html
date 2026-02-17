@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Baneste Codes - Desarrollo de software a la medida. Buscando el camino perfecto hacia aplicaciones móviles excepcionales."
+    />
+    <meta
+      name="keywords"
+      content="desarrollo software, aplicaciones móviles, Flutter, automatización, n8n, software a medida"
+    />
+    <meta name="author" content="Baneste Codes" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Baneste Codes - Desarrollo de Software a la Medida"
+    />
+    <meta
+      property="og:description"
+      content="Transformamos ideas en soluciones de software innovadoras, escalables y de alto rendimiento."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://banestecodes.com" />
+
+    <title>Baneste Codes - Desarrollo de Software a la Medida</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/banesteCodesIcon.jpeg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/sections.css" />
+  </head>
+  <body>
+    <!-- ============================================
+         LOADER SCREEN
+         ============================================ -->
+    <div class="loader-screen" id="loader">
+      <div class="loader-content">
+        <div class="loader-spinner"></div>
+        <h2 class="loader-text">Cargando...</h2>
+        <p class="loader-subtitle">Preparando tu experiencia</p>
+      </div>
+    </div>
+
+    <!-- ============================================
+         NAVEGACIÓN
+         ============================================ -->
+    <nav class="navbar" id="navbar">
+      <div class="container navbar-container">
+        <a href="#inicio" class="navbar-logo">
+          <img src="assets/baneste.png" alt="Baneste Codes Logo" />
+          <span>Baneste Codes</span>
+        </a>
+
+        <button
+          class="navbar-toggle"
+          id="navbarToggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="navbar-menu" id="navbarMenu">
+          <li><a href="#inicio" class="navbar-link active">Inicio</a></li>
+          <li><a href="#nosotros" class="navbar-link">Nosotros</a></li>
+          <li><a href="#servicios" class="navbar-link">Servicios</a></li>
+          <li><a href="#proyectos" class="navbar-link">Proyectos</a></li>
+          <li><a href="#testimonios" class="navbar-link">Testimonios</a></li>
+          <li><a href="#contacto" class="navbar-link">Contacto</a></li>
+          <li><a href="privacy.html" class="navbar-link">Políticas</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-background"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="badge animate-fade-in-down">
+            <span class="badge-icon">👑</span>
+            Software Developer
+          </span>
+
+          <h1 class="hero-title animate-fade-in-up delay-100">
+            Soluciones de Software a Medida
+            <br />
+            para Tu <span class="text-gradient">Negocio</span>
+          </h1>
+
+          <p class="hero-subtitle animate-fade-in-up delay-200">
+            Buscando el camino perfecto hacia aplicaciones móviles
+            excepcionales. Transformamos ideas en soluciones de software
+            innovadoras, escalables y de alto rendimiento.
+          </p>
+
+          <div class="hero-buttons animate-fade-in-up delay-300">
+            <a href="#contacto" class="btn btn-primary btn-large">
+              Comenzar Proyecto
+              <svg
+                class="icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </a>
+            <a href="#proyectos" class="btn btn-outline btn-large">
+              Ver Proyectos
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-scroll animate-pulse">
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         NOSOTROS
+         ============================================ -->
+    <section id="nosotros" class="section section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge section-badge">
+            <span class="badge-icon">👑</span>
+            Nosotros
+          </span>
+          <h2 class="section-title">
+            Sobre <span class="text-gradient">Baneste Codes</span>
+          </h2>
+          <p class="section-subtitle">
+            Fundada en octubre de 2025, Baneste Codes ha estado a la vanguardia
+            del desarrollo de software a medida, ofreciendo soluciones
+            innovadoras a empresas de diversas industrias.
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div class="grid grid-3">
+            <div class="card reveal-scale delay-100">
+              <div class="card-icon">💡</div>
+              <h3 class="card-title">Innovación y Tecnología</h3>
+              <p class="card-description">
+                Nos mantenemos a la vanguardia, utilizando las últimas
+                tecnologías para crear soluciones que no solo son robustas, sino
+                también futuristas.
+              </p>
+            </div>
+
+            <div class="card reveal-scale delay-200">
+              <div class="card-icon">💻</div>
+              <h3 class="card-title">Código de Calidad</h3>
+              <p class="card-description">
+                Escribimos código limpio, mantenible y escalable. Nuestra
+                arquitectura está pensada para crecer junto a tu negocio.
+              </p>
+            </div>
+
+            <div class="card reveal-scale delay-300">
+              <div class="card-icon">👥</div>
+              <h3 class="card-title">Enfoque en el Cliente</h3>
+              <p class="card-description">
+                Tu éxito es nuestro éxito. Trabajamos en estrecha colaboración
+                contigo, asegurando que el producto final supere tus
+                expectativas.
+              </p>
+            </div>
+          </div>
+
+          <div class="mission-vision reveal">
+            <div class="grid grid-2">
+              <div class="mission-card">
+                <h3>🎯 Nuestra Misión</h3>
+                <p>
+                  Transformar ideas en soluciones de software innovadoras,
+                  escalables y de alto rendimiento, adaptadas a las necesidades
+                  específicas de cada cliente.
+                </p>
+              </div>
+
+              <div class="vision-card">
+                <h3>🚀 Nuestra Visión</h3>
+                <p>
+                  Ser la empresa líder en desarrollo de software a la medida en
+                  Colombia, reconocida por la excelencia técnica, innovación y
+                  compromiso con el éxito de nuestros clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SERVICIOS
+         ============================================ -->
+    <section id="servicios" class="section section-gray">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge section-badge">
+            <span class="badge-icon">⚡</span>
+            Servicios
+          </span>
+          <h2 class="section-title">
+            Nuestros <span class="text-gradient">Servicios</span>
+          </h2>
+          <p class="section-subtitle">
+            Ofrecemos una gama completa de servicios de desarrollo de software
+            para ayudar a su negocio a prosperar en el mundo digital.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card reveal-left delay-100">
+            <div class="card-icon">📱</div>
+            <h3 class="card-title">Desarrollo de Aplicaciones Móviles</h3>
+            <p class="card-description">
+              Creamos aplicaciones móviles nativas y multiplataforma con
+              Flutter. Integración con hardware (escáneres, sensores) y UI/UX
+              excepcional para una experiencia de usuario superior.
+            </p>
+            <div class="tech-tags">
+              <span class="badge">Flutter</span>
+              <span class="badge">iOS</span>
+              <span class="badge">Android</span>
+            </div>
+          </div>
+
+          <div class="card reveal-right delay-200">
+            <div class="card-icon">🌐</div>
+            <h3 class="card-title">Desarrollo Web</h3>
+            <p class="card-description">
+              Aplicaciones web responsivas, rápidas y escalables utilizando
+              tecnologías modernas. Progressive Web Apps (PWA) con arquitectura
+              moderna y rendimiento optimizado.
+            </p>
+            <div class="tech-tags">
+              <span class="badge">React</span>
+              <span class="badge">Vue</span>
+              <span class="badge">Angular</span>
+            </div>
+          </div>
+
+          <div class="card reveal-left delay-300">
+            <div class="card-icon">🤖</div>
+            <h3 class="card-title">Automatización de Procesos</h3>
+            <p class="card-description">
+              Workflows automatizados con n8n, integración de sistemas
+              empresariales, automatización de mensajería y ventas. Optimiza tu
+              operación y reduce tiempos de respuesta.
+            </p>
+            <div class="tech-tags">
+              <span class="badge">n8n</span>
+              <span class="badge">APIs</span>
+              <span class="badge">Webhooks</span>
+            </div>
+          </div>
+
+          <div class="card reveal-right delay-400">
+            <div class="card-icon">💼</div>
+            <h3 class="card-title">Software a la Medida</h3>
+            <p class="card-description">
+              Soluciones personalizadas diseñadas específicamente para abordar
+              los desafíos y requisitos únicos de tu negocio. Consultoría
+              técnica, desarrollo y mantenimiento continuo.
+            </p>
+            <div class="tech-tags">
+              <span class="badge">Custom</span>
+              <span class="badge">Consultoría</span>
+              <span class="badge">Soporte</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PROYECTOS
+         ============================================ -->
+    <section id="proyectos" class="section section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge section-badge">
+            <span class="badge-icon">🚀</span>
+            Proyectos
+          </span>
+          <h2 class="section-title">
+            Nuestros <span class="text-gradient">Proyectos</span>
+          </h2>
+          <p class="section-subtitle">
+            Casos de éxito que demuestran nuestra capacidad para entregar
+            soluciones de software excepcionales.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card reveal-scale delay-100">
+            <div class="project-image">
+              <div class="project-overlay">
+                <span class="project-category">Aplicación Móvil</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Sistema de Logística WMS</h3>
+              <p class="project-description">
+                Aplicación móvil para gestión de almacenes con escaneo de
+                códigos de barras en tiempo real. Desarrollada con Flutter e
+                integración de hardware de escaneo para una empresa privada.
+              </p>
+              <div class="project-tech">
+                <span class="badge">Flutter</span>
+                <span class="badge">Hardware Integration</span>
+                <span class="badge">Real-time</span>
+              </div>
+              <div class="project-stats">
+                <div class="stat">
+                  <span class="stat-value">100%</span>
+                  <span class="stat-label">Satisfacción</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">50%</span>
+                  <span class="stat-label">Más Eficiencia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal-scale delay-200">
+            <div class="project-image">
+              <div class="project-overlay">
+                <span class="project-category">Automatización</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Automatización Travel Tours</h3>
+              <p class="project-description">
+                Sistema automatizado de mensajería y ventas para gestión de
+                reservas y comunicación con clientes. Implementado con n8n para
+                una agencia de viajes, optimizando procesos comerciales.
+              </p>
+              <div class="project-tech">
+                <span class="badge">n8n</span>
+                <span class="badge">API Integration</span>
+                <span class="badge">Automation</span>
+              </div>
+              <div class="project-stats">
+                <div class="stat">
+                  <span class="stat-value">80%</span>
+                  <span class="stat-label">Menos Tiempo</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">+45%</span>
+                  <span class="stat-label">Más Ventas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIOS
+         ============================================ -->
+    <section id="testimonios" class="section section-gray">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge section-badge">
+            <span class="badge-icon">💬</span>
+            Testimonios
+          </span>
+          <h2 class="section-title">
+            Lo Que Dicen Nuestros <span class="text-gradient">Clientes</span>
+          </h2>
+          <p class="section-subtitle">
+            La satisfacción de nuestros clientes es nuestra mayor recompensa.
+          </p>
+        </div>
+
+        <div class="testimonials-container">
+          <div class="testimonial-card reveal-left delay-100">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-text">
+                "Baneste Codes transformó nuestra operación logística. La app es
+                rápida, intuitiva y la integración con nuestros escáneres fue
+                perfecta. El equipo demostró un profundo conocimiento técnico y
+                un compromiso excepcional con nuestro proyecto."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <span>JM</span>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Juan Martínez</h4>
+                <p class="author-role">Director de Operaciones</p>
+                <p class="author-company">Empresa de Logística</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-right delay-200">
+            <div class="testimonial-content">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-text">
+                "La automatización nos permitió reducir el tiempo de respuesta
+                en un 80% y aumentar nuestras ventas significativamente. Baneste
+                Codes entendió perfectamente nuestras necesidades y entregó una
+                solución que superó nuestras expectativas."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <span>MG</span>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">María González</h4>
+                <p class="author-role">Gerente Comercial</p>
+                <p class="author-company">Travel Tours Agency</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACTO
+         ============================================ -->
+    <section id="contacto" class="section section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge section-badge">
+            <span class="badge-icon">📧</span>
+            Contacto
+          </span>
+          <h2 class="section-title">Contáctenos</h2>
+          <p class="section-subtitle">
+            ¿Tienes un proyecto en mente? Hablemos y hagamos realidad tu visión.
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info reveal-left">
+            <h3>Información de Contacto</h3>
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:banestecodes@gmail.com"
+                  >banestecodes@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <h4>Teléfono</h4>
+                <a href="tel:+573208806654">+57 320 880 6654</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Ubicación</h4>
+                <p>Florencia, Caquetá, Colombia</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://instagram.com/banesteCodes"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
+                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"
+                  />
+                  <path
+                    d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://twitter.com/banesteCodes"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="Twitter"
+              >
+                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://linkedin.com/company/banesteCodes"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+              >
+                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/banesteCodes"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+              >
+                <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal-right" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Nombre Completo</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="tu@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Teléfono (Opcional)</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-input"
+                placeholder="+57 300 000 0000"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                placeholder="Cuéntanos sobre tu proyecto..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-large">
+              Enviar Mensaje
+              <svg
+                class="icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Baneste Codes</h4>
+            <p>
+              Transformando ideas en soluciones de software innovadoras desde
+              2025.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul class="footer-links">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li><a href="#servicios">Desarrollo Móvil</a></li>
+              <li><a href="#servicios">Desarrollo Web</a></li>
+              <li><a href="#servicios">Automatización</a></li>
+              <li><a href="#servicios">Software a Medida</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Legal</h4>
+            <ul class="footer-links">
+              <li><a href="privacy.html">Políticas de Privacidad</a></li>
+              <li><a href="privacy.html#terms">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Baneste Codes. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/animations.js"></script>
+  </body>
+</html>
