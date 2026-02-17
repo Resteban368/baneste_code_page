@@ -53,6 +53,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   
+  // Cerrar menú al hacer clic en un link
+  navbarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (navbarMenu.classList.contains('active')) {
+        navbarMenu.classList.remove('active');
+        navbarToggle.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
+  
   // ============================================
   // ACTIVE LINK HIGHLIGHT
   // ============================================
