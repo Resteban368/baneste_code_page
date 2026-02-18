@@ -478,14 +478,49 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-8);
   margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.footer-slogan {
+  text-align: center;
+  color: var(--color-gray-light);
+  margin-bottom: var(--space-8);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Removed tablet/mobile stacking to keep horizontal layout */
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+  text-decoration: none;
+}
+
+.footer-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.footer-description {
+  color: var(--color-gray-light);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .footer-section h4 {
   margin-bottom: var(--space-4);
   color: var(--color-white);
+  font-size: var(--text-lg);
 }
 
 .footer-links {
@@ -493,7 +528,11 @@
 }
 
 .footer-links li {
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
 }
 
 .footer-links a {
@@ -503,6 +542,11 @@
 
 .footer-links a:hover {
   color: var(--color-primary-light);
+}
+
+.contact-icon-small {
+  font-size: 1.2rem;
+  min-width: 24px;
 }
 
 .footer-bottom {
@@ -516,7 +560,7 @@
 .social-links {
   display: flex;
   gap: var(--space-4);
-  justify-content: center;
+  justify-content: flex-start; /* Left aligned on desktop */
   margin-top: var(--space-4);
 }
 
@@ -540,6 +584,24 @@
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
+  .footer-content {
+    /* Keep 4 columns on mobile/tablet */
+    gap: var(--space-4);
+    text-align: left; /* Keep left align */
+  }
+  
+  .footer-brand {
+    justify-content: center;
+  }
+  
+  .footer-links li {
+    justify-content: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+
   .navbar-menu {
     position: fixed;
     top: 0;
@@ -593,7 +655,7 @@
     width: 30px;
     height: 3px;
   }
-}
+
   
   .navbar-menu.active li {
     opacity: 1;
@@ -637,6 +699,7 @@
   .social-links {
     justify-content: center;
   }
+}
 
 
 /* === WHATSAPP WIDGET === */
