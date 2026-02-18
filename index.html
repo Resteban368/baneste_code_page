@@ -45,31 +45,29 @@
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Baneste Codes",
-        "image": "https://banestecodes.com/assets/baneste.png",
-        "@id": "https://banestecodes.com",
-        "url": "https://banestecodes.com",
-        "telephone": "+573208806654",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Florencia",
-          "addressRegion": "Caquetá",
-          "addressCountry": "CO"
-        },
-        "sameAs": [
-          "https://instagram.com/banesteCodes",
-          "https://twitter.com/banesteCodes",
-          "https://linkedin.com/company/banesteCodes",
-          "https://github.com/banesteCodes"
-        ],
-        "priceRange": "$$"
-      }
+    {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Baneste Codes",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Florencia",
+    "addressRegion": "Caquetá",
+    "addressCountry": "CO"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de Desarrollo",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desarrollo Móvil Flutter" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automatización con n8n" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desarrollo Web" } }
+    ]
+  }
+}
     </script>
 
-    <title>Baneste Codes - Desarrollo de Software a la Medida</title>
+   <title>Desarrollo de Apps Flutter y Web en Florencia, Caquetá | Baneste Codes</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/baneste.ico" />
