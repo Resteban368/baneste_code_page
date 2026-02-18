@@ -579,6 +579,21 @@
     transition: opacity 0.3s ease, transform 0.3s ease;
     flex-shrink: 0;
   }
+  .navbar-toggle {
+    display: flex !important; /* Fuerza a que se muestre */
+    z-index: 1100;           /* Lo pone por encima de las partículas del hero */
+    position: relative;
+    background: rgba(26, 139, 157, 0.2); /* Crea un contraste suave con el fondo */
+    padding: 8px;
+    border-radius: var(--radius-md);
+  }
+
+  .navbar-toggle span {
+    background: var(--color-primary-light) !important; /* Color turquesa para que resalte */
+    width: 30px;
+    height: 3px;
+  }
+}
   
   .navbar-menu.active li {
     opacity: 1;
@@ -604,11 +619,7 @@
     display: none;
   }
   
-  .navbar-toggle {
-    display: flex !important;
-    z-index: 1001;
-    position: relative;
-  }
+
   
   .navbar-logo img {
     height: 40px;
@@ -626,15 +637,15 @@
   .social-links {
     justify-content: center;
   }
-}
+
 
 /* === WHATSAPP WIDGET === */
 /* === WHATSAPP WIDGET === */
 .whatsapp-widget {
   position: fixed;
-  bottom: var(--space-6);
-  right: var(--space-6);
-  z-index: var(--z-dropdown);
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999 !important; /* Prioridad máxima sobre cualquier otro elemento */
 }
 
 .whatsapp-float {
@@ -650,7 +661,11 @@
   box-shadow: 0 4px 20px rgba(77, 208, 225, 0.4);
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: visible !important;
 }
+
+
+
 
 .whatsapp-float:hover {
   transform: translateY(-5px) scale(1.1);
@@ -885,6 +900,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .whatsapp-chat {
+    right: -10px; /* Compensar margen derecho */
+    width: 90vw;
+  }
+}
+
 /* === FORM MESSAGE === */
 .form-message {
   margin-top: var(--space-4);
@@ -953,16 +975,62 @@
   height: 24px;
 }
 
+/* === MEDIA QUERIES PARA PANTALLAS PEQUEÑAS === */
 @media (max-width: 768px) {
+  /* WhatsApp Widget Responsive */
+  .whatsapp-widget {
+    bottom: var(--space-4);
+    right: var(--space-4);
+  }
+  
+  .whatsapp-float {
+    width: 50px; /* Reducido de 56px */
+    height: 50px;
+  }
+  
+  .whatsapp-float svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .whatsapp-chat {
+    width: calc(100vw - var(--space-6)); /* Margen seguro */
+    max-width: 340px;
+    bottom: 70px; /* Ajustado a nuevo tamaño de botón */
+    right: 0;
+    left: auto;
+    position: fixed; /* Fixed para evitar problemas de scroll */
+    margin-right: var(--space-3);
+  }
+
+  /* Scroll to Top Responsive */
   .scroll-to-top {
-    width: 45px;
-    height: 45px;
-    bottom: 90px; /* Ajuste para móvil encima de WhatsApp */
+    width: 40px; /* Reducido de 45px */
+    height: 40px;
+    bottom: 80px; /* Ajustado encima de WhatsApp */
     right: var(--space-4);
   }
   
   .scroll-to-top svg {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  /* Ajustes específicos para móviles muy pequeños (iPhone SE, etc) */
+  .whatsapp-chat {
+    width: calc(100vw - 20px);
+    right: 10px;
+    margin-right: 0;
+  }
+  
+  .logo-text {
+    font-size: 1.1rem; /* Reducir tamaño de logo texto */
+  }
+  
+  .navbar-toggle {
+    width: 36px;
+    height: 36px;
   }
 }
