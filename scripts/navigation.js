@@ -30,36 +30,55 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   // MOBILE MENU TOGGLE
   // ============================================
+
+  function lockBodyScroll() {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function unlockBodyScroll() {
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+  }
+
+  function closeMenu() {
+    navbarMenu.classList.remove('active');
+    navbarToggle.classList.remove('active');
+    unlockBodyScroll();
+  }
+
   if (navbarToggle) {
     navbarToggle.addEventListener('click', () => {
+      const isOpen = navbarMenu.classList.contains('active');
       navbarToggle.classList.toggle('active');
       navbarMenu.classList.toggle('active');
-      
-      // Prevenir scroll cuando el menú está abierto
-      if (navbarMenu.classList.contains('active')) {
-        document.body.style.overflow = 'hidden';
+      if (!isOpen) {
+        lockBodyScroll();
       } else {
-        document.body.style.overflow = 'auto';
+        unlockBodyScroll();
       }
     });
   }
-  
-  // Cerrar menú al hacer clic fuera
-  document.addEventListener('click', (e) => {
-    if (!navbar.contains(e.target) && navbarMenu.classList.contains('active')) {
-      navbarMenu.classList.remove('active');
-      navbarToggle.classList.remove('active');
-      document.body.style.overflow = 'auto';
+
+  // Cerrar menú al hacer clic en el overlay oscuro (el propio navbarMenu, no sus hijos)
+  navbarMenu.addEventListener('click', (e) => {
+    if (e.target === navbarMenu) {
+      closeMenu();
     }
   });
-  
+
+  // Cerrar menú al hacer clic fuera del navbar
+  document.addEventListener('click', (e) => {
+    if (!navbar.contains(e.target) && navbarMenu.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
   // Cerrar menú al hacer clic en un link
   navbarLinks.forEach(link => {
     link.addEventListener('click', () => {
       if (navbarMenu.classList.contains('active')) {
-        navbarMenu.classList.remove('active');
-        navbarToggle.classList.remove('active');
-        document.body.style.overflow = 'auto';
+        closeMenu();
       }
     });
   });
@@ -95,9 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   window.addEventListener('resize', () => {
     if (window.innerWidth > 768 && navbarMenu.classList.contains('active')) {
-      navbarMenu.classList.remove('active');
-      navbarToggle.classList.remove('active');
-      document.body.style.overflow = 'auto';
+      closeMenu();
     }
   });
   

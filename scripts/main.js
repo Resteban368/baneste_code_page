@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Ocultar loader después de 2 segundos
   setTimeout(() => {
     loader.classList.add("hidden");
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "";
   }, 2000);
 
   // ============================================
@@ -110,13 +110,7 @@ ${formData.message}
           behavior: "smooth",
         });
 
-        // Cerrar menú móvil si está abierto
-        const navbarMenu = document.getElementById("navbarMenu");
-        const navbarToggle = document.getElementById("navbarToggle");
-        if (navbarMenu.classList.contains("active")) {
-          navbarMenu.classList.remove("active");
-          navbarToggle.classList.remove("active");
-        }
+        // El menú móvil se cierra vía navigation.js al detectar click en navbar-link
       }
     });
   });
