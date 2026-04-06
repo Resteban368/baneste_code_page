@@ -18,13 +18,13 @@ body {
 
 /* Optimizar tap highlights */
 * {
-  -webkit-tap-highlight-color: rgba(77, 208, 225, 0.2);
+  -webkit-tap-highlight-color: rgba(13, 203, 223, 0.15);
   -webkit-touch-callout: none;
 }
 
 a,
 button {
-  -webkit-tap-highlight-color: rgba(77, 208, 225, 0.3);
+  -webkit-tap-highlight-color: rgba(13, 203, 223, 0.25);
 }
 
 /* Prevenir selección de texto en elementos interactivos */

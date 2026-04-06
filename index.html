@@ -77,7 +77,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -136,66 +136,128 @@
          HERO SECTION
          ============================================ -->
     <section id="inicio" class="hero-section">
-      <div class="hero-background"></div>
-      <div class="hero-overlay"></div>
-
-      <!-- Partículas animadas -->
-      <div class="hero-particles">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-      </div>
+      <div class="hero-grid-bg"></div>
+      <div class="hero-glow"></div>
 
       <div class="container hero-content">
         <div class="hero-text">
-          <span class="badge animate-fade-in-down">
-            <span class="badge-icon">👑</span>
-            Software Developer
+
+          <span class="hero-badge animate-fade-in-down">
+            <span class="hero-badge-dot"></span>
+            Primera consulta 100% gratuita
           </span>
 
           <h1 class="hero-title animate-fade-in-up delay-100">
-            Soluciones de Software a Medida
-            <br />
-            para Tu <span class="text-gradient">Negocio</span>
+            Cualquier idea,<br/>
+            la convertimos en<br/>
+            <span class="text-gradient">software real</span>
           </h1>
 
           <p class="hero-subtitle animate-fade-in-up delay-200">
-            Buscando el camino perfecto hacia aplicaciones móviles
-            excepcionales. Transformamos ideas en soluciones de software
-            innovadoras, escalables y de alto rendimiento.
+            Desarrollo multiplataforma para <strong>iOS, Android, Web</strong> y más.
+            Automatización, software a medida y consultoría técnica para empresas que quieren crecer con tecnología.
           </p>
 
+          <div class="hero-tags animate-fade-in-up delay-250">
+            <span class="hero-tag">📱 Móvil</span>
+            <span class="hero-tag">🌐 Web</span>
+            <span class="hero-tag">🤖 Automatización</span>
+            <span class="hero-tag">⚙️ Software a medida</span>
+          </div>
+
           <div class="hero-buttons animate-fade-in-up delay-300">
-            <a href="#contacto" class="btn btn-primary btn-large">
-              Comenzar Proyecto
-              <svg
-                class="icon"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
+            <a href="#contacto" class="btn btn-accent btn-large">
+              Consulta gratis
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
               </svg>
             </a>
             <a href="#proyectos" class="btn btn-outline btn-large">
-              Ver Proyectos
+              Ver proyectos
             </a>
           </div>
         </div>
+
+        <div class="hero-visual animate-fade-in delay-200">
+          <div class="hero-card-stack">
+            <div class="hero-card hc-1">
+              <span class="hc-icon">📱</span>
+              <div>
+                <p class="hc-title">Apps Móviles</p>
+                <p class="hc-sub">iOS & Android</p>
+              </div>
+            </div>
+            <div class="hero-card hc-2">
+              <span class="hc-icon">🌐</span>
+              <div>
+                <p class="hc-title">Desarrollo Web</p>
+                <p class="hc-sub">Rápido y escalable</p>
+              </div>
+            </div>
+            <div class="hero-card hc-3">
+              <span class="hc-icon">🤖</span>
+              <div>
+                <p class="hc-title">Automatización</p>
+                <p class="hc-sub">Procesos inteligentes</p>
+              </div>
+            </div>
+            <div class="hero-card hc-4">
+              <span class="hc-icon">💡</span>
+              <div>
+                <p class="hc-title">Cualquier idea</p>
+                <p class="hc-sub">La hacemos realidad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll animate-fade-in delay-500">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
       </div>
     </section>
+
+    <!-- ============================================
+         STRIP: POR QUÉ NOSOTROS
+         ============================================ -->
+    <div class="features-strip">
+      <div class="container">
+        <div class="features-strip-grid">
+          <div class="strip-item">
+            <span class="strip-icon">💡</span>
+            <div>
+              <strong>Cualquier idea posible</strong>
+              <p>Sin límites tecnológicos</p>
+            </div>
+          </div>
+          <div class="strip-divider"></div>
+          <div class="strip-item">
+            <span class="strip-icon">🔀</span>
+            <div>
+              <strong>Multiplataforma</strong>
+              <p>iOS, Android y Web desde un solo proyecto</p>
+            </div>
+          </div>
+          <div class="strip-divider"></div>
+          <div class="strip-item">
+            <span class="strip-icon">🎁</span>
+            <div>
+              <strong>Consulta gratis</strong>
+              <p>Primera reunión sin costo ni compromiso</p>
+            </div>
+          </div>
+          <div class="strip-divider"></div>
+          <div class="strip-item">
+            <span class="strip-icon">🚀</span>
+            <div>
+              <strong>Entrega rápida</strong>
+              <p>Metodología ágil y resultados concretos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ============================================
          NOSOTROS
@@ -204,16 +266,15 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="badge section-badge">
-            <span class="badge-icon">👑</span>
+            <span class="badge-icon">👋</span>
             Nosotros
           </span>
           <h2 class="section-title">
-            Sobre <span class="text-gradient">Baneste Codes</span>
+            Somos <span class="text-gradient">Baneste Codes</span>
           </h2>
           <p class="section-subtitle">
-            Fundada en octubre de 2025, Baneste Codes ha estado a la vanguardia
-            del desarrollo de software a medida, ofreciendo soluciones
-            innovadoras a empresas de diversas industrias.
+            Una agencia de desarrollo de software colombiana que convierte cualquier idea
+            en productos digitales reales, funcionales y escalables.
           </p>
         </div>
 
@@ -221,30 +282,28 @@
           <div class="grid grid-3">
             <div class="card reveal-scale delay-100">
               <div class="card-icon">💡</div>
-              <h3 class="card-title">Innovación y Tecnología</h3>
+              <h3 class="card-title">Cualquier idea es posible</h3>
               <p class="card-description">
-                Nos mantenemos a la vanguardia, utilizando las últimas
-                tecnologías para crear soluciones que no solo son robustas, sino
-                también futuristas.
+                No limitamos tu visión. Si lo puedes imaginar, nosotros lo
+                construimos con la tecnología adecuada para hacerlo realidad.
               </p>
             </div>
 
             <div class="card reveal-scale delay-200">
-              <div class="card-icon">💻</div>
-              <h3 class="card-title">Código de Calidad</h3>
+              <div class="card-icon">🔀</div>
+              <h3 class="card-title">Desarrollo Multiplataforma</h3>
               <p class="card-description">
-                Escribimos código limpio, mantenible y escalable. Nuestra
-                arquitectura está pensada para crecer junto a tu negocio.
+                Una sola base de código para iOS, Android y Web. Más rápido,
+                más económico y con la misma calidad nativa en todas las plataformas.
               </p>
             </div>
 
             <div class="card reveal-scale delay-300">
-              <div class="card-icon">👥</div>
-              <h3 class="card-title">Enfoque en el Cliente</h3>
+              <div class="card-icon">🤝</div>
+              <h3 class="card-title">Aliados de tu negocio</h3>
               <p class="card-description">
-                Tu éxito es nuestro éxito. Trabajamos en estrecha colaboración
-                contigo, asegurando que el producto final supere tus
-                expectativas.
+                No somos solo proveedores. Somos el equipo técnico de tu empresa,
+                comprometidos con tu crecimiento desde la idea hasta el lanzamiento.
               </p>
             </div>
           </div>
@@ -254,18 +313,17 @@
               <div class="mission-card">
                 <h3>🎯 Nuestra Misión</h3>
                 <p>
-                  Transformar ideas en soluciones de software innovadoras,
-                  escalables y de alto rendimiento, adaptadas a las necesidades
-                  específicas de cada cliente.
+                  Democratizar el acceso a software de calidad para empresas colombianas,
+                  transformando ideas en productos digitales que generan valor real.
                 </p>
               </div>
 
               <div class="vision-card">
                 <h3>🚀 Nuestra Visión</h3>
                 <p>
-                  Ser la empresa líder en desarrollo de software a la medida en
-                  Colombia, reconocida por la excelencia técnica, innovación y
-                  compromiso con el éxito de nuestros clientes.
+                  Ser la agencia de referencia en Colombia para desarrollo
+                  multiplataforma, reconocida por hacer posible cualquier idea con
+                  excelencia técnica y enfoque humano.
                 </p>
               </div>
             </div>
@@ -285,72 +343,107 @@
             Servicios
           </span>
           <h2 class="section-title">
-            Nuestros <span class="text-gradient">Servicios</span>
+            Lo que <span class="text-gradient">construimos</span>
           </h2>
           <p class="section-subtitle">
-            Ofrecemos una gama completa de servicios de desarrollo de software
-            para ayudar a su negocio a prosperar en el mundo digital.
+            Desde una landing page hasta un sistema empresarial complejo.
+            Si lo necesitas, lo desarrollamos.
           </p>
         </div>
 
-        <div class="grid grid-2">
-          <div class="card reveal-left delay-100">
-            <div class="card-icon">📱</div>
-            <h3 class="card-title">Desarrollo de Aplicaciones Móviles</h3>
-            <p class="card-description">
-              Creamos aplicaciones móviles nativas y multiplataforma con
-              Flutter. Integración con hardware (escáneres, sensores) y UI/UX
-              excepcional para una experiencia de usuario superior.
-            </p>
-            <div class="tech-tags">
-              <span class="badge">Flutter</span>
-              <span class="badge">iOS</span>
-              <span class="badge">Android</span>
+        <div class="services-grid">
+          <div class="service-card reveal-left delay-100">
+            <div class="service-icon-wrap">
+              <span class="service-icon">📱</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Apps Móviles Multiplataforma</h3>
+              <p class="service-desc">
+                Una sola app que funciona perfectamente en <strong>iOS y Android</strong>.
+                Desarrollamos con Flutter para entregar experiencias nativas en la mitad del tiempo.
+              </p>
+              <ul class="service-features">
+                <li>✓ iOS & Android desde un solo código</li>
+                <li>✓ Integración con hardware (escáneres, sensores)</li>
+                <li>✓ UI/UX de alto impacto</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="badge">Flutter</span>
+                <span class="badge">iOS</span>
+                <span class="badge">Android</span>
+                <span class="badge">Firebase</span>
+              </div>
             </div>
           </div>
 
-          <div class="card reveal-right delay-200">
-            <div class="card-icon">🌐</div>
-            <h3 class="card-title">Desarrollo Web</h3>
-            <p class="card-description">
-              Aplicaciones web responsivas, rápidas y escalables utilizando
-              tecnologías modernas. Progressive Web Apps (PWA) con arquitectura
-              moderna y rendimiento optimizado.
-            </p>
-            <div class="tech-tags">
-              <span class="badge">React</span>
-              <span class="badge">Vue</span>
-              <span class="badge">Angular</span>
+          <div class="service-card reveal-right delay-200">
+            <div class="service-icon-wrap">
+              <span class="service-icon">🌐</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Desarrollo Web</h3>
+              <p class="service-desc">
+                Sitios web y aplicaciones web <strong>rápidas, modernas y responsivas</strong>.
+                Desde landing pages hasta plataformas complejas con panel administrativo.
+              </p>
+              <ul class="service-features">
+                <li>✓ Progressive Web Apps (PWA)</li>
+                <li>✓ SEO y rendimiento optimizados</li>
+                <li>✓ Diseño adaptable a todos los dispositivos</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="badge">React</span>
+                <span class="badge">Vue</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">PWA</span>
+              </div>
             </div>
           </div>
 
-          <div class="card reveal-left delay-300">
-            <div class="card-icon">🤖</div>
-            <h3 class="card-title">Automatización de Procesos</h3>
-            <p class="card-description">
-              Workflows automatizados con n8n, integración de sistemas
-              empresariales, automatización de mensajería y ventas. Optimiza tu
-              operación y reduce tiempos de respuesta.
-            </p>
-            <div class="tech-tags">
-              <span class="badge">n8n</span>
-              <span class="badge">APIs</span>
-              <span class="badge">Webhooks</span>
+          <div class="service-card reveal-left delay-300">
+            <div class="service-icon-wrap">
+              <span class="service-icon">🤖</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Automatización de Procesos</h3>
+              <p class="service-desc">
+                Conectamos tus sistemas, automatizamos tareas repetitivas y
+                creamos <strong>flujos de trabajo inteligentes</strong> que ahorran tiempo y dinero.
+              </p>
+              <ul class="service-features">
+                <li>✓ Bots de ventas y atención al cliente</li>
+                <li>✓ Integración entre plataformas</li>
+                <li>✓ Reportes y alertas automáticas</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="badge">n8n</span>
+                <span class="badge">APIs</span>
+                <span class="badge">WhatsApp</span>
+                <span class="badge">Webhooks</span>
+              </div>
             </div>
           </div>
 
-          <div class="card reveal-right delay-400">
-            <div class="card-icon">💼</div>
-            <h3 class="card-title">Software a la Medida</h3>
-            <p class="card-description">
-              Soluciones personalizadas diseñadas específicamente para abordar
-              los desafíos y requisitos únicos de tu negocio. Consultoría
-              técnica, desarrollo y mantenimiento continuo.
-            </p>
-            <div class="tech-tags">
-              <span class="badge">Custom</span>
-              <span class="badge">Consultoría</span>
-              <span class="badge">Soporte</span>
+          <div class="service-card reveal-right delay-400">
+            <div class="service-icon-wrap">
+              <span class="service-icon">💼</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Software a la Medida</h3>
+              <p class="service-desc">
+                <strong>Cualquier idea que tengas, la analizamos y construimos.</strong>
+                Sistemas de gestión, ERPs, dashboards, plataformas SaaS y más.
+              </p>
+              <ul class="service-features">
+                <li>✓ Análisis y diseño de arquitectura</li>
+                <li>✓ Desarrollo ágil por etapas</li>
+                <li>✓ Soporte y mantenimiento continuo</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="badge">Backend</span>
+                <span class="badge">Base de datos</span>
+                <span class="badge">Consultoría</span>
+              </div>
             </div>
           </div>
         </div>
@@ -629,18 +722,51 @@
     </section>
 
     <!-- ============================================
+         CTA CONSULTA GRATIS
+         ============================================ -->
+    <section class="section section-dark cta-section">
+      <div class="cta-glow"></div>
+      <div class="container">
+        <div class="cta-content reveal">
+          <span class="cta-badge">🎁 Sin costo · Sin compromiso</span>
+          <h2 class="cta-title">
+            ¿Tienes una idea?<br/>
+            <span class="text-gradient">Cuéntanosla gratis</span>
+          </h2>
+          <p class="cta-subtitle">
+            Agenda una videollamada con nuestro equipo. Analizamos tu idea,
+            te proponemos la mejor solución tecnológica y te damos un presupuesto
+            claro — todo sin ningún costo.
+          </p>
+          <div class="cta-actions">
+            <a href="https://wa.me/573187341434?text=Hola%20Baneste%20Codes%2C%20quiero%20una%20consulta%20gratuita%20sobre%20mi%20proyecto" target="_blank" rel="noopener" class="btn btn-whatsapp btn-large">
+              <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              Agendar por WhatsApp
+            </a>
+            <a href="#contacto" class="btn btn-outline btn-large">
+              Enviar mensaje
+            </a>
+          </div>
+          <p class="cta-note">⚡ Respuesta en menos de 24 horas</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
          CONTACTO
          ============================================ -->
-    <section id="contacto" class="section section-dark">
+    <section id="contacto" class="section section-gray">
       <div class="container">
         <div class="section-header reveal">
           <span class="badge section-badge">
             <span class="badge-icon">📧</span>
             Contacto
           </span>
-          <h2 class="section-title">Contáctenos</h2>
+          <h2 class="section-title">Escríbenos</h2>
           <p class="section-subtitle">
-            ¿Tienes un proyecto en mente? Hablemos y hagamos realidad tu visión.
+            ¿Prefieres el email? Cuéntanos tu proyecto y te respondemos con una propuesta.
           </p>
         </div>
 
@@ -819,6 +945,7 @@
               <li><a href="#nosotros">Nosotros</a></li>
               <li><a href="#servicios">Servicios</a></li>
               <li><a href="#proyectos">Proyectos</a></li>
+              <li><a href="#clientes">Clientes</a></li>
             </ul>
           </div>
 
