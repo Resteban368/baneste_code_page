@@ -376,14 +376,54 @@
         </div>
 
         <div class="projects-grid">
+          <!-- ONPOINT PROJECT CARD -->
           <div class="project-card reveal-scale delay-100">
-            <div class="project-image">
+            <div class="project-carousel portrait" data-carousel="carousel-1">
+              <div class="carousel-container">
+                <div class="carousel-track">
+                  <div class="carousel-slide active">
+                    <img src="assets/proyects/onpoint/onpoint-1.png" alt="onPoint - Pantalla 1" loading="lazy">
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/proyects/onpoint/onpoint-2.png" alt="onPoint - Pantalla 2" loading="lazy">
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/proyects/onpoint/onpoint-3.png" alt="onPoint - Pantalla 3" loading="lazy">
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/proyects/onpoint/onpoint-4.png" alt="onPoint - Pantalla 4" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carousel Controls -->
+              <button class="carousel-btn carousel-prev" aria-label="Imagen anterior">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button class="carousel-btn carousel-next" aria-label="Imagen siguiente">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+
+              <!-- Carousel Indicators -->
+              <div class="carousel-indicators">
+                <button class="indicator active" aria-label="Ir a imagen 1"></button>
+                <button class="indicator" aria-label="Ir a imagen 2"></button>
+                <button class="indicator" aria-label="Ir a imagen 3"></button>
+                <button class="indicator" aria-label="Ir a imagen 4"></button>
+              </div>
+
+              <!-- Category Badge -->
               <div class="project-overlay">
                 <span class="project-category">Aplicación Móvil</span>
               </div>
             </div>
+
             <div class="project-content">
-              <h3 class="project-title">Sistema de Logística WMS</h3>
+              <h3 class="project-title">onPoint - Sistema de Logística WMS</h3>
               <p class="project-description">
                 Aplicación móvil para gestión de almacenes con escaneo de
                 códigos de barras en tiempo real. Desarrollada con Flutter e
@@ -391,8 +431,8 @@
               </p>
               <div class="project-tech">
                 <span class="badge">Flutter</span>
-                <span class="badge">Hardware Integration</span>
-                <span class="badge">Real-time</span>
+                <span class="badge">Firebase</span>
+                <span class="badge">SQLite</span>
               </div>
               <div class="project-stats">
                 <div class="stat">
@@ -404,26 +444,69 @@
                   <span class="stat-label">Más Eficiencia</span>
                 </div>
               </div>
+              <a href="proyectos/onpoint.html" class="btn btn-outline btn-project-detail">
+                Ver detalle del proyecto
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
             </div>
           </div>
 
+          <!-- AGENTE TRAVEL PROJECT CARD -->
           <div class="project-card reveal-scale delay-200">
-            <div class="project-image">
+            <div class="project-carousel landscape" data-carousel="carousel-2">
+              <div class="carousel-container">
+                <div class="carousel-track">
+                  <div class="carousel-slide active">
+                    <img src="assets/proyects/agenteTravel/agente-travel-1.png" alt="Agente Travel - Pantalla 1" loading="lazy">
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/proyects/agenteTravel/agente-travel-2.png" alt="Agente Travel - Pantalla 2" loading="lazy">
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="assets/proyects/agenteTravel/agente-travel-3.png" alt="Agente Travel - Pantalla 3" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carousel Controls -->
+              <button class="carousel-btn carousel-prev" aria-label="Imagen anterior">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button class="carousel-btn carousel-next" aria-label="Imagen siguiente">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+
+              <!-- Carousel Indicators -->
+              <div class="carousel-indicators">
+                <button class="indicator active" aria-label="Ir a imagen 1"></button>
+                <button class="indicator" aria-label="Ir a imagen 2"></button>
+                <button class="indicator" aria-label="Ir a imagen 3"></button>
+              </div>
+
+              <!-- Category Badge -->
               <div class="project-overlay">
                 <span class="project-category">Automatización</span>
               </div>
             </div>
+
             <div class="project-content">
-              <h3 class="project-title">Automatización Travel Tours</h3>
+              <h3 class="project-title">Agente Travel</h3>
               <p class="project-description">
                 Sistema automatizado de mensajería y ventas para gestión de
                 reservas y comunicación con clientes. Implementado con n8n para
                 una agencia de viajes, optimizando procesos comerciales.
               </p>
               <div class="project-tech">
+                <span class="badge">NestJS</span>
+                <span class="badge">Flutter</span>
+                <span class="badge">PostgreSQL</span>
                 <span class="badge">n8n</span>
-                <span class="badge">API Integration</span>
-                <span class="badge">Automation</span>
               </div>
               <div class="project-stats">
                 <div class="stat">
@@ -435,6 +518,12 @@
                   <span class="stat-label">Más Ventas</span>
                 </div>
               </div>
+              <a href="proyectos/agente-travel.html" class="btn btn-outline btn-project-detail">
+                Ver detalle del proyecto
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -875,6 +964,7 @@
 
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/carousel.js"></script>
     <script src="scripts/navigation.js"></script>
     <script src="scripts/animations.js"></script>
     <script src="scripts/contact.js"></script>
